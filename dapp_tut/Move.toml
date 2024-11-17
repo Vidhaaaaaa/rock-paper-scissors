@@ -1,0 +1,15 @@
+[package]
+name = "dapp_tut"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyModule = '0xe2b7d7803fc0c87b1a7dafce46de241d6a056be892581f73a07ef810e2a31446'
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "testnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
