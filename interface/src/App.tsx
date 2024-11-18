@@ -1,6 +1,7 @@
 import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
 import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
 import { useWallet } from "@aptos-labs/wallet-adapter-react";
+import "tailwindcss/tailwind.css"
 
 
 const GameWrapper1 = () => {
@@ -69,7 +70,7 @@ function App() {
         <div className="absolute right-4 top-4 items-end">
             <WalletSelector />
         </div>
-        {connected ? GameWrapper2() : GameWrapper1()}
+        {!connected ? GameWrapper1() : GameWrapper2()}
     </div>
     </>
   );
