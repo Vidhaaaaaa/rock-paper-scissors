@@ -1,4 +1,4 @@
-module MyModule::RockPaperScissors_01 {
+module MyAddress::RockPaperScissors_01 {
     use std::string::{String,utf8};
     use std::signer;
     use aptos_framework::randomness;
